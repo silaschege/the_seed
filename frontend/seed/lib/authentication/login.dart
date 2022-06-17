@@ -32,51 +32,54 @@ class LoginPage extends StatelessWidget {
                     SizedBox(
                       height: 120,
                     ),
-                    Container(
-                      padding: EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
-                            BoxShadow(
-                                color: Color.fromARGB(252, 213, 111, 1),
-                                blurRadius: 20,
-                                offset: Offset(0, 10))
-                          ]),
-                      child: Column(
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                                border: Border(
-                                    bottom: BorderSide(color: Colors.grey))),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                  hintText: "Email/Mobile Number",
-                                  hintStyle: TextStyle(
-                                      color: Color.fromARGB(252, 213, 111, 1)),
-                                  border: InputBorder.none),
-                            ),
+                    TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Color.fromRGBO(83, 166, 98, 1),
+                                width: 1.0),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(32.0)),
                           ),
-                          Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                                border: Border(
-                                    bottom: BorderSide(color: Colors.grey))),
-                            child: TextField(
-                              obscureText: true,
-                              enableSuggestions: false,
-                              autocorrect: false,
-                              decoration: InputDecoration(
-                                  hintText: "Password",
-                                  hintStyle: TextStyle(
-                                      color: Color.fromARGB(252, 213, 111, 1)),
-                                  border: InputBorder.none),
-                            ),
-                          )
-                        ],
-                      ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Color.fromRGBO(83, 166, 98, 1),
+                                width: 2.0),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(32.0)),
+                          ),
+                          labelText: 'Email/Phone Number',
+                          labelStyle: TextStyle(
+                            color: Color.fromRGBO(83, 166, 98, 1),
+                          ),
+                          hintText: 'Email/Phone Number'),
                     ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Color.fromRGBO(83, 166, 98, 1),
+                                width: 1.0),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(32.0)),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Color.fromRGBO(83, 166, 98, 1),
+                                width: 2.0),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(32.0)),
+                          ),
+                          labelText: 'Password',
+                          labelStyle: TextStyle(
+                            color: Color.fromRGBO(83, 166, 98, 1),
+                          ),
+                          hintText: 'Password'),
+                    ),
+
                     SizedBox(
                       height: 50,
                     ),

@@ -34,14 +34,56 @@ class FarmerRegistration extends StatelessWidget {
                         color: Color.fromRGBO(83, 166, 98, 1), width: 2.0),
                     borderRadius: BorderRadius.all(Radius.circular(32.0)),
                   ),
-                  labelText: 'Full Name',
+                  labelText: 'First Name',
                   labelStyle: TextStyle(
                     color: Color.fromRGBO(83, 166, 98, 1),
                   ),
-                  hintText: 'First Second Last'),
+                  hintText: 'First Name'),
             ),
             SizedBox(
-              height: 20,
+              height: 15,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromRGBO(83, 166, 98, 1), width: 1.0),
+                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromRGBO(83, 166, 98, 1), width: 2.0),
+                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                  ),
+                  labelText: 'Last Name',
+                  labelStyle: TextStyle(
+                    color: Color.fromRGBO(83, 166, 98, 1),
+                  ),
+                  hintText: 'Last Name'),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromRGBO(83, 166, 98, 1), width: 1.0),
+                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromRGBO(83, 166, 98, 1), width: 2.0),
+                    borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                  ),
+                  labelText: 'Other Name',
+                  labelStyle: TextStyle(
+                    color: Color.fromRGBO(83, 166, 98, 1),
+                  ),
+                  hintText: 'Other Name'),
+            ),
+            SizedBox(
+              height: 15,
             ),
             TextField(
               decoration: InputDecoration(
@@ -62,7 +104,7 @@ class FarmerRegistration extends StatelessWidget {
                   hintText: 'Phone Number'),
             ),
             SizedBox(
-              height: 20,
+              height: 15,
             ),
             TextField(
               decoration: InputDecoration(
@@ -83,7 +125,7 @@ class FarmerRegistration extends StatelessWidget {
                   hintText: 'Date of Birth'),
             ),
             SizedBox(
-              height: 20,
+              height: 15,
             ),
             TextField(
               decoration: InputDecoration(
@@ -104,7 +146,7 @@ class FarmerRegistration extends StatelessWidget {
                   hintText: '4 digit Password'),
             ),
             SizedBox(
-              height: 20,
+              height: 15,
             ),
             TextField(
               decoration: InputDecoration(
@@ -125,7 +167,7 @@ class FarmerRegistration extends StatelessWidget {
                   hintText: 'Confirm 4 digit Password'),
             ),
             SizedBox(
-              height: 40,
+              height: 30,
             ),
             SizedBox(
                 width: 200,
@@ -148,7 +190,7 @@ class FarmerRegistration extends StatelessWidget {
                   ),
                 )),
             SizedBox(
-              height: 40,
+              height: 30,
             ),
             TextButton(
                 onPressed: () {
