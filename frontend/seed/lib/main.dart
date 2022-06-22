@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:seed/authentication/login.dart';
+import 'package:seed/general/homescreen.dart';
+import 'package:seed/summary/home_summary.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,6 +9,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+  
 
   // This widget is the root of your application.
   @override
@@ -25,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const LoginPage(),
+      home: HomeScreen(),
     );
   }
 }
