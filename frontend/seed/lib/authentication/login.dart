@@ -88,7 +88,7 @@ class LoginPage extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 50),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
-                        color: Color.fromARGB(252, 213, 111, 1),
+                        color: Color.fromRGBO(254, 213, 111, 1),
                       ),
                       child: Center(
                         child: Text(

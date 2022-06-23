@@ -143,7 +143,7 @@ class LandRegistration extends StatelessWidget {
                       child: Text("Register"),
                       onPressed: () => print("it's pressed"),
                       style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(252, 213, 111, 1),
+                        primary: Color.fromRGBO(254, 213, 111, 1),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(32.0),
                         ),
