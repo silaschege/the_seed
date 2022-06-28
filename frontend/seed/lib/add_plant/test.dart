@@ -30,7 +30,7 @@ class _AddPlantPageState extends State<AddPlantPage> {
           decoration: BoxDecoration(color: Color.fromRGBO(83, 166, 98, 1)),
           child: Column(
             children: <Widget>[
-              // SizedBox(height: 60),
+              SizedBox(height: 60),
               Image.asset(
                 'images/logo.png',
                 height: 200,
@@ -41,8 +41,8 @@ class _AddPlantPageState extends State<AddPlantPage> {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        topRight: Radius.circular(30))),
+                        topLeft: Radius.circular(50),
+                        topRight: Radius.circular(50))),
                 child: Padding(
                   padding: EdgeInsets.all(20),
                   child: Column(
@@ -55,54 +55,28 @@ class _AddPlantPageState extends State<AddPlantPage> {
                                       topLeft: Radius.circular(50),
                                       topRight: Radius.circular(50))),
                               child: Padding(
-                                  padding: EdgeInsets.all(10),
+                                  padding: EdgeInsets.all(20),
                                   child: Column(
                                     children: <Widget>[
                                       Expanded(
                                           child: GridView.count(
                                         crossAxisCount: 2,
-                                        crossAxisSpacing: 10,
-                                        mainAxisSpacing: 10,
+                                        padding: EdgeInsets.all(5),
+                                        crossAxisSpacing: 5,
+                                        mainAxisSpacing: 5,
                                         children: _listItem
                                             .map((item) => Card(
-                                                  color: Color.fromRGBO(
-                                                      254, 213, 111, 0.4),
+                                                  color: Colors.transparent,
                                                   elevation: 0,
                                                   child: Container(
                                                     decoration: BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius
-                                                                .circular(30),
+                                                                .circular(20),
                                                         image: DecorationImage(
                                                             image: AssetImage(
                                                                 item),
                                                             fit: BoxFit.cover)),
-                                                    child: Column(children: [
-                                                      ElevatedButton(
-                                                        onPressed: () {},
-                                                        child: Row(
-                                                          mainAxisSize:
-                                                              MainAxisSize.min,
-                                                          children: [
-                                                            Text('Add',
-                                                                style:
-                                                                    TextStyle(
-                                                                  color: Colors
-                                                                      .black,
-                                                                )), // <-- Text
-                                                          ],
-                                                        ),
-                                                        style: ElevatedButton
-                                                            .styleFrom(
-                                                          primary:
-                                                              Color.fromRGBO(
-                                                                  254,
-                                                                  213,
-                                                                  111,
-                                                                  1),
-                                                        ),
-                                                      ),
-                                                    ]),
                                                     // child: Transform.translate(
                                                     //   offset: Offset(50, -50),
                                                     //   child: Container(
