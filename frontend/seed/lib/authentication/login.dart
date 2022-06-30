@@ -23,8 +23,8 @@ class LoginPage extends StatelessWidget {
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(50),
-                      topRight: Radius.circular(50))),
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30))),
               child: Padding(
                 padding: EdgeInsets.all(20),
                 child: Column(
@@ -93,7 +93,7 @@ class LoginPage extends StatelessWidget {
                       child: Center(
                         child: Text(
                           "Login",
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.black),
                         ),
                       ),
                     ),

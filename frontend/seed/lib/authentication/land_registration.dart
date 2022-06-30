@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:seed/authentication/farmer_registration.dart';
+import 'package:seed/general/homescreen.dart';
+import 'package:seed/summary/home_summary.dart';
 
 class LandRegistration extends StatelessWidget {
   const LandRegistration({Key? key}) : super(key: key);
@@ -140,8 +142,16 @@ class LandRegistration extends StatelessWidget {
                     width: 200,
                     height: 50,
                     child: ElevatedButton(
-                      child: Text("Register"),
-                      onPressed: () => print("it's pressed"),
+                      child: Text(
+                        "Register",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                         primary: Color.fromRGBO(254, 213, 111, 1),
                         shape: RoundedRectangleBorder(

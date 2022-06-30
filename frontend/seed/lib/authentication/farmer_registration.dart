@@ -173,8 +173,14 @@ class FarmerRegistration extends StatelessWidget {
                 width: 200,
                 height: 50,
                 child: ElevatedButton.icon(
-                  label: Text("Next"),
-                  icon: Icon(Icons.navigate_next),
+                  label: Text(
+                    "Next",
+                    style: TextStyle(color: Colors.black),
+                  ),
+                  icon: Icon(
+                    Icons.navigate_next,
+                    color: Colors.black,
+                  ),
                   onPressed: () {
                     Navigator.push(
                       context,

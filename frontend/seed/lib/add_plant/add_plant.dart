@@ -9,18 +9,18 @@ class AddPlantPage extends StatefulWidget {
 
 class _AddPlantPageState extends State<AddPlantPage> {
   final List<String> _listItem = [
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
-    'images/logo.png',
+    'maize',
+    'rice',
+    'beans',
+    'wheat',
+    'sorghum',
+    'millet',
+    'oats',
+    'potatoes',
+    'onions',
+    'tomato',
+    'parsely',
+    'ginger',
   ];
   @override
   Widget build(BuildContext context) {
@@ -65,19 +65,19 @@ class _AddPlantPageState extends State<AddPlantPage> {
                                         mainAxisSpacing: 10,
                                         children: _listItem
                                             .map((item) => Card(
-                                                  color: Color.fromRGBO(
-                                                      254, 213, 111, 0.4),
-                                                  elevation: 0,
+                                                  color: Colors.white,
+                                                  elevation: 2,
                                                   child: Container(
-                                                    decoration: BoxDecoration(
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(30),
-                                                        image: DecorationImage(
-                                                            image: AssetImage(
-                                                                item),
-                                                            fit: BoxFit.cover)),
+                                                    // decoration: BoxDecoration(
+                                                    //     borderRadius:
+                                                    //         BorderRadius
+                                                    //             .circular(30),
+                                                    //     image: DecorationImage(
+                                                    //         image: AssetImage(
+                                                    //             item),
+                                                    //         fit: BoxFit.cover)),
                                                     child: Column(children: [
+                                                      Text(item),
                                                       ElevatedButton(
                                                         onPressed: () {},
                                                         child: Row(

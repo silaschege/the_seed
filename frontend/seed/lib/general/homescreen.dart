@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:seed/add_plant/add_plant.dart';
 import 'package:seed/express/express.dart';
-import 'package:seed/shipping/In_transit.dart';
+
+import 'package:seed/shipping/shipping_controller.dart';
 import 'package:seed/summary/home_summary.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ final screen = [
   HomeSummaryPage(),
   ExpressPage(),
   AddPlantPage(),
-  InTransitPage(),
+  ShippingController(),
 ];
 
 class _HomeScreenState extends State<HomeScreen> {
