@@ -12,4 +12,4 @@ from django.shortcuts import render
 # login into account 
 # password reset 
 # account change information
-# wishlist
+
