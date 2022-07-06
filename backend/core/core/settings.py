@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # third party
     'phonenumber_field',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
